@@ -1,0 +1,79 @@
+<%include ../partials/header %>
+<head>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $(Para1).slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#button2").click(function(){
+        $(Para2).slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#button3").click(function(){
+        $(Para3).slideToggle("slow");
+    });
+});
+
+</script>
+</head>
+<body>
+<section class="bio">
+<div class="main">
+  <div id="wrapper">
+	<div id="button-bio">
+	<div class="section">
+		<h1>Alvin York</h1>
+		<img id="imn" src="YorkC.jpg" alt="Pic 1" />
+		</br>
+		<button type="button" class="Button" id="button1">Explore</button>
+			<p id = "Para1">Alvin Cullum York (December 13, 1887 – September 2, 1964), also known as Sergeant York,
+			was one of the most decorated United States Army soldiers of World War I. He received the Medal of Honor 
+			for leading an attack on a German machine gun nest, taking at least one machine gun, killing at least 25
+			enemy soldiers and capturing 132. York's Medal of Honor action occurred during the United States-led portion
+			of the Meuse-Argonne Offensive in France, which was intended to breach the Hindenburg line and force the Germans
+			to surrender. He earned decorations from several allied countries during WWI, including France, Italy and Montenegro.</p>
+	</div>
+	
+	<div class="section">
+		<h1>Manfred von Richthofen</h1>
+		<img src="RichthoftenC.jpg" alt="Pic 2"/>
+		</br>
+		<button type="button" class="Button" id="button2">Explore</button>
+			<p id = Para2>Manfred Albrecht Freiherr von Richthofen (2 May 1892 – 21 April 1918), also known as the "Red Baron", was a fighter 
+			pilot with the German Air Force during World War I. He is considered the ace-of-aces of the war, being officially credited with 80 air combat victories.
+			Originally a cavalryman, Richthofen transferred to the Air Service in 1915, becoming one of the first members of fighter squadron Jagdstaffel 
+			2 in 1916. He quickly distinguished himself as a fighter pilot, and during 1917 became leader of Jasta 11 and then the larger fighter wing unit Jagdgeschwader 1, better 
+			known as "The Flying Circus" or "Richthofen's Circus" because of the bright colours of its aircraft, and perhaps also because of the way the unit was transferred from o
+			ne area of allied air activity to another – moving like a travelling circus, and frequently setting up in tents on improvised airfields. </p>
+	</div>
+	
+	<div class="section">
+		<h1>Alexi Brusilov</h1>
+		<img src="BrusilovC.jpg" alt="Pic 3"/>
+		</br>
+		<button type="button" class="Button" id="button3">Explore</button>
+			<p id = Para3>Aleksei Alekseyevich Brusilov (Russian: Алексе́й Алексе́евич Бруси́лов; 31 August [O.S. 19 August]
+			1853 – 17 March 1926) was a Russian general most noted for the development of new offensive tactics used in the 1
+			916 Brusilov Offensive, which was his greatest achievement. The innovative and relatively successful tactics used w
+			ere later copied by the Germans. Born into the aristocracy (whose father was also a general) Brusilov trained as a ca
+			valry officer, but by 1914 he realized that cavalry was obsolete in the new style of warfare because of its vulnerabil
+			ity to machine gun and artillery. Historians portray him as the only WWI Russian general capable of winning major batt
+			les. However, his heavy casualties seriously weakened the Russian army, which was unable to replace its losses.
+			During the offensive, he had a small numerical advantage (600,000 to 500,000).</p>
+	</div>
+	</div>
+</div>
+</div>
+</section>
+</body>
+
+</html>

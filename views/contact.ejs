@@ -1,0 +1,35 @@
+<%include ../partials/header %>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <div class="spacer">
+    <div class="main">
+      <div class="row">
+        <h1>Contact Us</h1>
+        
+        <a href="/addcontact" class="button-comment">Add a Comment</a>
+        
+      </div>
+      
+      <div class="row">
+        <div id="contact-styling">
+        <% contact.forEach(function(contacts) { %>
+                
+                <div class="item">
+                    <%= contacts.id %><br>
+                    <%= contacts.name %><br>
+                    <%= contacts.email %><br>
+                    <%= contacts.Comment %><br>
+                   
+                    </div>
+              <a href="/deletecontact/<%= contacts.id %>" class="button-comment">Delete Comment</a>
+              <a href="/editcontact/<%= contacts.id %>" class="button-comment">Edit Comment</a>
+         
+        
+    <% }); %>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<%include ../partials/footer %>

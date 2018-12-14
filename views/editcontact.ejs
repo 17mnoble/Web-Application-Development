@@ -1,0 +1,35 @@
+  <% include ../partials/header %>
+<div class="spacer">
+  <div class="main">
+    <div class="row">
+      
+      <h1>Edit Comment <br>
+      <div class="grid-container">
+        
+     <% indOne.forEach(function(contacts) { %>        
+                <form accept-charset="UTF-8" action="/editcontact/<%= contacts.id %>" method="post">
+       
+                    <div class="item">
+                      <label for="name">Name</label>
+                        <input name="name" type="text" pattern="[A-Za-z]{1,32}" required value='<%= contacts.name %>' />
+                      
+                      
+                      <label for="email">Email</label> 
+                        <input name="email" type="text" pattern="[^ @]*@[^ @]*" required value='<%= contacts.email %>' />
+                        
+                        
+                      <label for="comment">Comment</label>
+                        <input class="textarea" name="comment" type="text" value='<%= contacts.Comment %>' />
+                        
+                       
+                      <button class="btn">Edit</button>
+                       
+                       
+                        </div>
+                  </form>
+          <% }); %> 
+             
+      </div> 
+    </div>
+</div>
+  </h1>

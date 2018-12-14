@@ -1,0 +1,29 @@
+<%include ../partials/header %>
+
+<div class="spacer">
+<div class="main">
+<div class="row">
+    <div class="row-contact">
+        <h1>Add a comment<br>
+        <div class="grid-container">
+            <form accept-charset="UTF-8" action="/addcontact" method="post">    
+            <div class="item">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Enter name" pattern="[A-Za-z]{1,32}" required/>
+                  
+                    
+                <label for="image">Email</label> 
+                <input name="email" type="text" placeholder="Enter email" pattern="[^ @]*@[^ @]*" required/>
+                    
+                <label for="price">Comment</label>
+                <input class="textarea" name="comment" type="text" placeholder="Enter comment"/>
+            
+                <button class="button">Submit</button>
+            </div>
+            </form>
+        </div>
+        </h1>
+    </div>
+</div>
+</div>
+</div>

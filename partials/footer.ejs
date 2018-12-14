@@ -1,0 +1,13 @@
+<footer class="footer">
+  <script>
+      jQuery(function($) {
+      setInterval(function() {
+        var date = new Date(),
+            time = date.toLocaleTimeString();
+        $(".clock").html(time);
+  }, 1000);
+});
+  </script>
+  <span class="clock"></span>
+</footer>
+</html>
